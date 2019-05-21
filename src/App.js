@@ -37,3 +37,39 @@ const App = () => {
 }
 
 export default App;
+
+
+
+
+
+
+
+// import Slider from 'react-input-slider';
+
+// const rotation = keyframes`
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// `;
+
+// const [{x, y}, setXY] = useState({x:1,y:0});
+
+// <Slider
+//   css={{marginTop: 20}}
+//   axis="xy"
+//   x={x}
+//   y={y}
+//   xmax={8}
+//   ystep={0.2}
+//   ymax={12}
+//   xstep={0.1}
+//   onChange={newPos => setXY(newPos)}
+// />
+
+// {divs.map(i => <WordDiv key={i} css={{
+//   fontSize: 20*x,
+//   animation: `${rotation} infinite ${y}s linear`
+// }}/>)}
