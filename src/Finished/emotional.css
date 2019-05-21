@@ -1,0 +1,14 @@
+A - introduction to what we have. intro to the very basics of Emotion (jsx, css).
+
+B - Button is a bit hard to read... let's change that font!! (intro to <Global>)
+
+C - Ok cool, let's get this button to work! Create a WordDiv. make it look cool.
+
+D - dynamic time!! make it change on hover state.
+
+E - what about something more difficult? EmotionDiv! let's create dynamic contrasting colors.
+
+F - ok great... now let's add in a slider to let us change the size of the EmotionDivs.
+    (do this as a separate CSS object that is passed into the css={} in an array)
+
+G - do we have any more time? let's make it an x-y slider, where the y controls rotation speed.
