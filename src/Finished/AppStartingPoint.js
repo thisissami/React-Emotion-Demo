@@ -1,6 +1,8 @@
 /** @jsx jsx */
 import React from 'react';
 import { jsx } from '@emotion/core';
+// import { feelings } from './emotionalConsts';
+// what will this^ be used for?
 
 const containerCSS = {
   backgroundColor: '#FFC0CB',
@@ -13,8 +15,7 @@ const containerCSS = {
   textAlign: 'center',
 };
 
-
-function App() {
+const App = () => {
   return (
     <main css={containerCSS}>
       <h1 css={{fontSize: 50}}>
@@ -24,12 +25,12 @@ function App() {
       <section>
         {/* buttons go here */}
         <button>
-          Create a cool DIV
+          Create a cool word DIV
         </button>
       </section>
 
       <section>
-        {/* cool divs go here */}
+        {/* cool word divs go here */}
       </section>
     </main>
   );
