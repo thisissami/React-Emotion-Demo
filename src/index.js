@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Global } from '@emotion/core';
 import App from './App';
+import AppWithTrulyCoolWordDivs from './AppWithTrulyCoolWordDivs';
 
 ReactDOM.render(
   (
@@ -13,8 +14,11 @@ ReactDOM.render(
         '*': {
           fontFamily: "'Yellowtail', cursive"
         },
+        button: {
+          fontFamily: 'Roboto'
+        }
       }} />
-      <App />
+      <AppWithTrulyCoolWordDivs />
     </>
   ),
   document.getElementById('root')

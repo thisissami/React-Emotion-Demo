@@ -1,8 +1,10 @@
 /** @jsx jsx */
-import React from 'react';
-import { jsx } from '@emotion/core';
+import React, { useState } from 'react';
+import { jsx, css } from '@emotion/core';
 // import { feelings } from './emotionalConsts';
 // what will this^ be used for?
+
+import WordDiv from './WordDiv';
 
 const containerCSS = {
   backgroundColor: '#FFC0CB',
@@ -15,22 +17,29 @@ const containerCSS = {
   textAlign: 'center',
 };
 
+const alternateCSS = css`
+  background-color: purple;
+`;
+
 const App = () => {
+  const [divs, setDivs] = useState([]);
+
   return (
-    <main css={containerCSS}>
+    <main css={[containerCSS]}>
       <h1 css={{fontSize: 50}}>
         Let's get <strong><u>EMOTIONAL</u></strong>!!!1!1!!one!
       </h1>
 
       <section>
         {/* buttons go here */}
-        <button>
+        <button onClick={() => setDivs([...divs, <WordDiv key={divs.length}/>]) }>
           Create a cool word DIV
         </button>
       </section>
 
       <section>
         {/* cool word divs go here */}
+        {divs}
       </section>
     </main>
   );
